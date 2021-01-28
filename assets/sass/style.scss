@@ -1,0 +1,40 @@
+@import "../../themes/researcher/assets/sass/variables";
+
+#content ul.blog-list {
+    list-style: none;
+
+    li {
+        margin: 16px 0;
+        a {
+            text-decoration: none;
+
+            div:first-child { 
+                color: $red;
+                font-weight: bold;
+            }
+
+            &:hover div:first-child {
+                text-decoration: underline;
+            }
+
+            div:not(:first-child) {
+                color: $black;
+                font-family: sans-serif;
+            }
+        }
+    }
+}
+
+#content p {
+    font-family: sans-serif;
+}
+
+#content .date {
+    font-family: "Inconsolata";
+    color: lighten($black, 30%);
+}
+
+#content h1 {
+    text-decoration: solid;
+    text-decoration-skip-ink: auto;
+}

@@ -1,0 +1,43 @@
+baseURL = "http://schedulaar.github.io/blog"
+languageCode = "en-us"
+title = "Michael Markl"
+theme = "researcher"
+
+[params]
+  author = "Michael Markl"
+  description = "From Maths via CSS to Computer Science"
+  favicon = "favicon.ico"  # path to a .ico to use as favicon
+  logo = ""  # url or path to a logo to put in the header
+  customCss = ["sass/style.scss"]
+  [[params.footer]]
+    text = "Email"
+    url = "mailto:marklmichael98@gmail.com"
+  [[params.footer]]
+    text = "GitHub"
+    url = "https://github.com/schedulaar"
+  [[params.footer]]
+    text = "LinkedIn"
+    url = "https://www.linkedin.com/in/michael-markl-16bbb7164/"
+
+[permalinks]
+  blogs = "/blog/:year/:month/:slug/"
+  blog = "/blog/:year/:month/:slug/"
+
+
+
+[menu]
+  [[menu.main]]
+    name = "Blog"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    name = "About"
+    url = "/about"
+    weight = 2
+  [[menu.main]]
+    name = "Contact"
+    url = "/contact"
+    weight = 3
+
+[markup.goldmark.renderer]
+  unsafe = true  # allow raw HTML in markdown files

@@ -1,0 +1,8 @@
+<div id="footer" class="mb-5">
+    <hr>
+    <div class="container text-center">
+        {{ range .Site.Params.footer }}
+        <a href="{{ .url | absURL }}"><small>{{ .text }}</small></a>
+        {{ end }}
+    </div>
+</div>

@@ -1,0 +1,7 @@
+{{ define "main" }}
+<div class="container">
+    <h1>{{ .Title }}</h1>
+    <p class="date">{{ .Date.Format "Jan 2, 2006" }} &nbsp;―&nbsp; {{ .Site.Params.author }}</p>
+    {{ .Content }}
+</div>
+{{ end }}
