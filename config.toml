@@ -1,4 +1,4 @@
-baseURL = "http://michael-markl.de"
+baseURL = "https://michael-markl.de"
 languageCode = "en-us"
 title = "Michael Markl"
 theme = "researcher"
