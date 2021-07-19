@@ -27,3 +27,13 @@ If you want to make it even more instant, use `1` instead of `200`.
 Note, that setting `0` turns off the tooltips altogether, so a positive value is required.
 
 This tip was given on [reddit.com](https://www.reddit.com/r/kde/comments/66vu2u/how_to_set_faster_windows_preview_tooltips_in/dglpcwn/?utm_source=reddit&utm_medium=web2x&context=3) by the reddit user [Zren](https://www.reddit.com/user/Zren/).
+
+## Make Signal Desktop use the System Tray Icon
+
+To make Signal Desktop use the system tray icon, edit the file `/usr/share/applications/signal-desktop.desktop`:
+Add the option `--use-tray-icon` in the line starting with `Exec=`.
+In my case, the updated line has the following content:
+```
+Exec=/opt/Signal/signal-desktop --use-tray-icon ---no-sandbox %U
+```
+
