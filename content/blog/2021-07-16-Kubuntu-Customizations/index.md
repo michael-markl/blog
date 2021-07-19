@@ -37,3 +37,4 @@ In my case, the updated line has the following content:
 Exec=/opt/Signal/signal-desktop --use-tray-icon ---no-sandbox %U
 ```
 
+This trick was described on [askubuntu.com](https://askubuntu.com/questions/1123693/how-minimize-signal-messenger-to-system-tray-top-right-corner).
