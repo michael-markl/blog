@@ -38,3 +38,10 @@ Exec=/opt/Signal/signal-desktop --use-tray-icon ---no-sandbox %U
 ```
 
 This trick was described on [askubuntu.com](https://askubuntu.com/questions/1123693/how-minimize-signal-messenger-to-system-tray-top-right-corner).
+
+## Disable Ctrl+Alt+L shortcut for locking screen.
+
+Locking your screen is one of the most frequent actions I take, and having a reasonable shortcut for that is super helpful.
+In my opinion, **Win+L** is a better shortcut for locking your screen than the default **Ctrl+Alt+L**.
+It is the default on most systems I usually use. Additionally, **Ctrl+Alt+L** is often the default for the "Format Document" command; locking the screen while you actually wanted to format the document is a major annoyance.
+You can adjust this shortcut under the "ksmserver" module using the "Global Shortcuts" settings.
