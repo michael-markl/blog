@@ -12,7 +12,5 @@ I am particularly interested in analyzing dynamic models, i.e. models that captu
 as well as multi-modal traffic infrastructure. 
 
 
-Besides I 
-
 
 
