@@ -7,13 +7,17 @@
     <meta name="author" content='{{ .Site.Params.author }}'>
 
     {{ 
-        $style := slice
+        $css := slice
             (resources.Get "bootstrap.min.css")
             (resources.Get "fonts/roboto/latin.css")
-            | resources.Concat "/style2.css" | minify | fingerprint "md5"
+            (resources.Get "fonts/roboto/latin-italic.css")
+            (resources.Get "fonts/josefin-sans/latin.css")
+            (resources.Get "fonts/josefin-sans/latin-italic.css")
+            (resources.Get "style.scss" | toCSS )
+            | resources.Concat "/style.css"
+            | resources.PostCSS
     }}
 
-    {{ $css := resources.Get "sass/style.css" | resources.PostCSS }} 
     {{ if hugo.IsProduction }} 
         {{ $css = $css | minify | fingerprint | resources.PostProcess }} 
     {{ end }}
@@ -25,13 +29,11 @@
         integrity="{{ $css.Data.Integrity }}"
       {{- end }}
     />
-    
 
-    <link rel="stylesheet" href="{{ $style.Permalink }}">
-    <link rel="stylesheet" href="{{ (resources.Get "fonts/roboto/latin.css" | minify).Permalink  }}">
 
-    {{ $bootstrap := (resources.Get "bootstrap.min.css").Permalink }}
-    <link rel="stylesheet" href="{{ $bootstrap }}">
+    {{ if or (.Params.math) (.Site.Params.math) }}
+        {{- partial "math.html" . -}}
+    {{ end }}
 
     <link rel="icon" type="image/png" href="{{ .Site.Params.favicon | absURL }}">
 

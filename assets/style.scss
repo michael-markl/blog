@@ -1,4 +1,19 @@
-@import "variables";
+// Sizes
+$max-width: 750px;
+$avatar-size: 210px;
+
+:root {
+    --font-family-sans-serif: 'Roboto', sans-serif;
+    --font-family-special: 'Josefin Sans', sans-serif;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+// Colors
+$black: #222222;
+$red: #dc3545;
 
 // Internal variables
 $y-small: 0.6rem;
@@ -42,7 +57,7 @@ $y-medium: 1.0rem;
 // Style
 .navbar *, h1, h2, h3, h4, h5, h6 {
     color: $black;
-    font-family: "Inconsolata";
+    font-family: var(--font-family-special);
     line-height: 1.2;
 }
 
@@ -53,6 +68,9 @@ $y-medium: 1.0rem;
 .navbar-brand {
     @extend %link-dark;
     font-size: 2rem;
+    font-family: var(--font-family-special);
+    letter-spacing: 0.15em;
+    font-weight: 300;
 }
 
 .nav-link {
@@ -236,18 +254,18 @@ $avatar-circle-margin: 15px;
 
             div:not(:first-child) {
                 color: $black;
-                font-family: sans-serif;
+                font-family: var(--font-family-sans-serif);
             }
         }
     }
 }
 
 #content p {
-    font-family: sans-serif;
+    font-family: var(--font-family-sans-serif);
 }
 
 #content .date {
-    font-family: "Inconsolata";
+    /*font-family: var(--font-family-special);*/
     color: lighten($black, 30%);
 }
 

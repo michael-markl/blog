@@ -34,17 +34,35 @@ title = "Michael Markl"
     source = "assets"
     target = "assets"
   [[module.mounts]]
+    source = "static"
+    target = "static"
+  [[module.mounts]]
     source = "node_modules/bootstrap/dist/css/bootstrap.min.css"
     target = "assets/bootstrap.min.css"
+  [[module.mounts]]
+    source = "node_modules/katex/dist/katex.min.css"
+    target = "assets/katex.min.css"
+  [[module.mounts]]
+    source = "node_modules/katex/dist/katex.min.js"
+    target = "assets/katex.min.js"
+  [[module.mounts]]
+    source = "node_modules/katex/dist/contrib/auto-render.min.js"
+    target = "assets/contrib/auto-render.min.js"
+  [[module.mounts]]
+    source = "node_modules/katex/dist/fonts"
+    target = "static/fonts"
   [[module.mounts]]
     source = "node_modules/@fontsource/roboto"
     target = "assets/fonts/roboto"
   [[module.mounts]]
-    source = "static"
-    target = "static"
-  [[module.mounts]]
     source = "node_modules/@fontsource/roboto/files"
-    target = "static/fonts/roboto/files"
+    target = "static/files"
+  [[module.mounts]]
+    source = "node_modules/@fontsource/josefin-sans"
+    target = "assets/fonts/josefin-sans"
+  [[module.mounts]]
+    source = "node_modules/@fontsource/josefin-sans/files"
+    target = "static/files"
 
 [menu]
   [[menu.main]]
