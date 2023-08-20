@@ -1,11 +1,12 @@
 {{ define "main" }}
 <div class="container">
-    <h1>{{ .Title }}</h1>
+    {{ .Content }}
+    <h2>Blog Posts</h2>
     <ul class="blog-list">
         {{ range .Pages }}
-            <li><a href="{{ .Permalink }}">
-            <div>{{ .Title }}</div>
-            <div><span class="date">{{ .Date.Format "Jan 2, 2006:" }}</span> {{ .Summary }}</div>
+        <li><a href="{{ .Permalink }}">
+                <div>{{ .Title }}</div>
+                <div><span class="date">{{ .Date.Format "Jan 2, 2006:" }}</span> {{ .Summary }}</div>
             </a></li>
         {{ end }}
     </ul>

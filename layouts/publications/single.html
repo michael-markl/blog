@@ -1,0 +1,7 @@
+{{ define "main" }}
+<div class="container">
+    <h1>{{ .Title }}</h1>
+    <p class="date">Joint work with {{ .Param "joint-authors" }}.</p>
+    {{ .Content }}
+</div>
+{{ end }}

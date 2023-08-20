@@ -2,13 +2,13 @@
 title: "Kubuntu Customizations"
 date: 2021-07-16T16:45:33+02:00
 slug: "kubuntu-customizations"
-draft: true
+draft: false
 ---
+A collection of my Kubuntu and KDE customizations to get the best working experience.
+These are **only based on my personal preference**.
+<!--more-->
 
-This article is a collection of Kubuntu and KDE customizations I usually apply to get the best working experience.
-These are **only based on my individual personal preference**.
 This collection will grow over time and will be updated every time I see myself adjusting Kubuntu.
-
 
 ## Delay of Tooltips
 
@@ -19,7 +19,7 @@ When I have multiple windows of the same applications opened at the same time, t
 To select one specific window of the application, I hover over the application icon, wait for the previews (aka. toolbar) to open and click on the desired window.
 That waiting time is way too long for me (~1s).
 Usually, I shorten this waiting time to 200ms by applying
-```bash
+```sh
 kwriteconfig5 --file ~/.config/plasmarc --group PlasmaToolTips --key Delay 200
 ```
 
@@ -33,7 +33,7 @@ This tip was given on [reddit.com](https://www.reddit.com/r/kde/comments/66vu2u/
 To make Signal Desktop use the system tray icon, edit the file `/usr/share/applications/signal-desktop.desktop`:
 Add the option `--use-tray-icon` in the line starting with `Exec=`.
 In my case, the updated line has the following content:
-```
+```sh
 Exec=/opt/Signal/signal-desktop --use-tray-icon ---no-sandbox %U
 ```
 
