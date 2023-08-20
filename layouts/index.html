@@ -1,0 +1,38 @@
+{{ define "main" }}
+<div class="container">
+    {{ .Content }}
+
+    <h2 id="publications">Publications</h2>
+    <ul class="blog-list">
+        {{ with .Site.GetPage "publications" }}
+            {{ range .Pages }}
+            <li><a href="{{ .Permalink }}">
+                    <div>{{ .Title }}</div>
+                    <div><span class="date">{{ .Date.Format "Jan, 2006." }} Joint work with {{ .Param "joint-authors" }}.</div>
+                    <div><span class="date">Abstract:</span> {{ .Summary  }}</div>
+                </a></li>
+            {{ end }}
+        {{ end }}
+    </ul>
+
+    <h2 id="blog-posts">Blog Posts</h2>
+    <ul class="blog-list">
+        {{ with .Site.GetPage "blog" }}
+            {{ range .Pages}}
+            <li>
+                <a href="{{ .Permalink }}">
+                    <div>{{ .Title }}</div>
+                    <div>
+                        <span class="date">{{ .Date.Format "Jan 2, 2006:" }}</span>
+                        {{ .Summary | plainify }}
+                    </div>
+                </a>
+            </li>
+            {{ end }}
+        {{ end }}
+    </ul>
+
+    <h2>Open Source Projects & Contributions</h2>
+
+</div>
+{{ end }}

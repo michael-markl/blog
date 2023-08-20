@@ -1,20 +1,23 @@
 baseURL = "https://michael-markl.de"
 languageCode = "en-us"
 title = "Michael Markl"
-theme = "researcher"
 
 [params]
   author = "Michael Markl"
-  description = "From Maths via CSS to Computer Science"
-  favicon = "favicon.ico"  # path to a .ico to use as favicon
-  logo = ""  # url or path to a logo to put in the header
-  customCss = ["sass/style.scss"]
+  description = "PhD student in algorithmic game theory"
+  favicon = "favicon.png"
+  [[params.style]]
+    fontFamily = "Inconsolata"
+    fontSize = "14pt"
+    pageWidth = "750px"
+    colorBlack = "#222222"
+    colorRed = "#dc3545"
   [[params.footer]]
     text = "Email"
     url = "mailto:marklmichael98@gmail.com"
   [[params.footer]]
     text = "GitHub"
-    url = "https://github.com/schedulaar"
+    url = "https://github.com/michael-markl"
   [[params.footer]]
     text = "LinkedIn"
     url = "https://www.linkedin.com/in/michael-markl-16bbb7164/"
@@ -30,14 +33,6 @@ theme = "researcher"
     name = "Blog"
     url = "/"
     weight = 1
-  [[menu.main]]
-    name = "About"
-    url = "/about"
-    weight = 2
-  [[menu.main]]
-    name = "Contact"
-    url = "/contact"
-    weight = 3
 
 [markup.goldmark.renderer]
   unsafe = true  # allow raw HTML in markdown files
