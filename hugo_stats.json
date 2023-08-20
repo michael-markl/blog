@@ -1,0 +1,58 @@
+{
+  "htmlElements": {
+    "tags": [
+      "a",
+      "body",
+      "code",
+      "div",
+      "figure",
+      "h1",
+      "h2",
+      "head",
+      "hr",
+      "html",
+      "img",
+      "li",
+      "link",
+      "meta",
+      "nav",
+      "p",
+      "pre",
+      "small",
+      "span",
+      "strong",
+      "title",
+      "ul"
+    ],
+    "classes": [
+      "avatar",
+      "blog-list",
+      "container",
+      "date",
+      "flex-column",
+      "flex-sm-row",
+      "highlight",
+      "mb-5",
+      "mr-sm-auto",
+      "mt-5",
+      "mx-0",
+      "navbar",
+      "navbar-brand",
+      "navbar-expand-sm",
+      "p-0",
+      "text-center",
+      "text-nowrap"
+    ],
+    "ids": [
+      "about-me",
+      "abstract",
+      "blog-posts",
+      "content",
+      "delay-of-tooltips",
+      "disable-ctrlaltl-shortcut-for-locking-screen",
+      "footer",
+      "make-signal-desktop-use-the-system-tray-icon",
+      "publications"
+    ]
+  }
+}

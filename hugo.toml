@@ -21,12 +21,30 @@ title = "Michael Markl"
   [[params.footer]]
     text = "LinkedIn"
     url = "https://www.linkedin.com/in/michael-markl-16bbb7164/"
+    
+[build]
+  writeStats = true
 
 [permalinks]
   blogs = "/blog/:year/:month/:slug/"
   blog = "/blog/:year/:month/:slug/"
 
-
+[module]
+  [[module.mounts]]
+    source = "assets"
+    target = "assets"
+  [[module.mounts]]
+    source = "node_modules/bootstrap/dist/css/bootstrap.min.css"
+    target = "assets/bootstrap.min.css"
+  [[module.mounts]]
+    source = "node_modules/@fontsource/roboto"
+    target = "assets/fonts/roboto"
+  [[module.mounts]]
+    source = "static"
+    target = "static"
+  [[module.mounts]]
+    source = "node_modules/@fontsource/roboto/files"
+    target = "static/fonts/roboto/files"
 
 [menu]
   [[menu.main]]
