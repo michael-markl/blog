@@ -14,5 +14,5 @@ We study a dynamic traffic assignment model, where agents base their instantaneo
 ## Publications
 
 * Extended abstract: Proceedings of the AAAI Conference on Artificial Intelligence, 36(5), 5059-5067.
-  {{% doi "10.1609/aaai.v36i5.20438" %}}
-* ArXiv Preprint: {{% doi "10.48550/arXiv.2109.06713" %}}
+  {{- doi "10.1609/aaai.v36i5.20438" -}}
+* ArXiv Preprint: {{- doi "10.48550/arXiv.2109.06713" -}}
