@@ -21,6 +21,12 @@ title = "Michael Markl"
   [[params.footer]]
     text = "LinkedIn"
     url = "https://www.linkedin.com/in/michael-markl-16bbb7164/"
+  [[params.footer]]
+    text = "dblp.org"
+    url = "https://dblp.org/pid/01/3021-2.html"
+  [[params.footer]]
+    text = "ORCID"
+    url = "https://orcid.org/0000-0002-1921-5461"
     
 [build]
   writeStats = true
