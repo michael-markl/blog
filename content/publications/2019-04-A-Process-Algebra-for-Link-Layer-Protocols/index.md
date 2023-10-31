@@ -14,5 +14,5 @@ We propose a process algebra for link layer protocols, featuring a unique mechan
 ## Publications
 
 * ArXiv Preprint: {{< doi "10.48550/arXiv.1907.13329" >}}
-* Conference Paper: Proceedings of Programming Languages and Systems, ESOP 2019.
+* Conference Paper: Proceedings of Programming Languages and Systems, ESOP 2019,
   {{< doi "10.1007/978-3-030-17184-1_24" >}}

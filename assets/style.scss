@@ -179,11 +179,11 @@ $avatar-circle-margin: 15px;
     }
 
     ul {
-        list-style: inside;
-        padding-left: 2rem;
+        list-style: outside;
+        padding-left: 1em;
     }
 
-    .container>ul {
+    ul.blog-list {
         padding-left: 0;
     }
 
