@@ -1,6 +1,7 @@
-baseURL = "https://michael-markl.de"
-languageCode = "en-us"
 title = "Michael Markl"
+baseURL = "https://michael-markl.de"
+defaultContentLanguage = "en-us"
+languageCode = "en-us"
 
 [params]
   author = "Michael Markl"
