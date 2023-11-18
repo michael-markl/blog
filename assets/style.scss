@@ -55,7 +55,13 @@ $y-medium: 1.0rem;
 }
 
 // Style
-.navbar *, h1, h2, h3, h4, h5, h6 {
+.navbar *,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     color: $black;
     font-family: var(--font-family-special);
     line-height: 1.2;
@@ -76,6 +82,7 @@ $y-medium: 1.0rem;
 .nav-link {
     @extend %link-default;
 }
+
 @media screen and (min-width: 576px) {
     .navbar {
         display: block;
@@ -89,7 +96,7 @@ $avatar-circle-margin: 15px;
     text-align: center;
     display: block;
 
-    & > img {
+    &>img {
         border-radius: 50%;
         height: $avatar-size;
         width: $avatar-size;
@@ -101,7 +108,7 @@ $avatar-circle-margin: 15px;
         display: inline;
 
 
-        & > img {
+        &>img {
             float: right;
             margin: 0 0 0 $avatar-circle-margin;
             $ellipse-vertical: calc($avatar-size / 2);
@@ -113,7 +120,7 @@ $avatar-circle-margin: 15px;
 
 
 @media screen and (min-width: ($max-width + ($avatar-size / 2) + 10px)) {
-    figure.avatar > img {
+    figure.avatar>img {
         margin: 0 (-$avatar-size / 2) 0 $avatar-circle-margin;
         shape-outside: ellipse(($avatar-size / 2 + $avatar-circle-margin) ($avatar-size / 2) at ($avatar-size / 2 + $avatar-circle-margin) center);
     }
@@ -131,10 +138,12 @@ $avatar-circle-margin: 15px;
 
     p {
         margin-bottom: $y-small;
+
         @media screen and (min-width: 576px) {
             text-align: justify;
         }
     }
+
     li {
         @media screen and (min-width: 576px) {
             text-align: justify;
@@ -237,6 +246,20 @@ $avatar-circle-margin: 15px;
     a {
         @extend %link-dark;
     }
+
+    ul {
+        list-style: none;
+        display: inline;
+        margin: 0;
+        padding: 0;
+    }
+    li {
+        display: inline;
+    }
+
+    li:not(:last-child)::after {
+        content: " | ";
+    }
 }
 
 #content ul.blog-list {
@@ -244,10 +267,11 @@ $avatar-circle-margin: 15px;
 
     li {
         margin: 16px 0;
+
         a {
             text-decoration: none;
 
-            div:first-child { 
+            div:first-child {
                 color: $red;
                 font-weight: bold;
             }

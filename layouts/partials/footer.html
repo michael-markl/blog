@@ -1,8 +1,24 @@
 <div id="footer" class="mb-5">
     <hr>
     <div class="container text-center">
-        {{ range .Site.Params.footer }}
-        <a href="{{ .url | absURL }}"><small>{{ .text }}</small></a>
-        {{ end }}
+        <small>RSS:</small>
+        <ul>
+            {{ $rss := .Site.GetPage "" }}
+            {{ $rssOutput := $rss.OutputFormats.Get "rss" }}
+            <li><small><a href="{{ $rssOutput.Permalink }}">All</a></small></li>
+            {{ $rss := .Site.GetPage "publications" }}
+            {{ $rssOutput := $rss.OutputFormats.Get "rss" }}
+            <li><small><a href="{{ $rssOutput.Permalink }}">Only Publications</a></small></li>
+            {{ $rss := .Site.GetPage "blog" }}
+            {{ $rssOutput := $rss.OutputFormats.Get "rss" }}
+            <li><small><a href="{{ $rssOutput.Permalink }}">Only Blog Posts</a></small></li>
+        </ul>
+    </div>
+    <div class="container text-center">
+        <ul>
+            {{ range .Site.Params.footer }}
+            <li><a href="{{ .url | absURL }}"><small>{{ .text }}</small></a></li>
+            {{ end }}
+        </ul>
     </div>
 </div>
