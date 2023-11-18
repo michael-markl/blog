@@ -1,7 +1,7 @@
 <div id="footer" class="mb-5">
     <hr>
     <div class="container text-center">
-        <small>RSS:</small>
+        <small>RSS: </small>
         <ul>
             {{ $rss := .Site.GetPage "" }}
             {{ $rssOutput := $rss.OutputFormats.Get "rss" }}
