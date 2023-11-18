@@ -71,6 +71,9 @@ languageCode = "en-us"
     source = "node_modules/@fontsource/josefin-sans/files"
     target = "static/files"
 
+[minify.tdewolff.html]
+  keepWhitespace = true
+
 [menu]
   [[menu.main]]
     name = "Blog"
