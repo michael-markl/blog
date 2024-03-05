@@ -2,6 +2,7 @@ title = "Michael Markl"
 baseURL = "https://michael-markl.de"
 defaultContentLanguage = "en-us"
 languageCode = "en-us"
+disableAliases = true
 
 [params]
   author = "Michael Markl"
@@ -28,6 +29,9 @@ languageCode = "en-us"
   [[params.footer]]
     text = "ORCID"
     url = "https://orcid.org/0000-0002-1921-5461"
+  [[params.footer]]
+    text = "Google Scholar"
+    url = "https://scholar.google.com/citations?user=eiJ2PEoAAAAJ"
     
 [build]
   writeStats = true
@@ -82,3 +86,15 @@ languageCode = "en-us"
 
 [markup.goldmark.renderer]
   unsafe = true  # allow raw HTML in markdown files
+
+[outputFormats.REDIR]
+  mediaType = "text/netlify"
+  baseName = "_redirects"
+  isPlainText = true
+  notAlternative = true
+
+[mediaTypes."text/netlify"]
+  delimiter = ""
+
+[outputs]
+  home = ["HTML", "RSS", "REDIR"]

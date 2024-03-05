@@ -1,0 +1,6 @@
+{{ with resources.Get "_redirects" }}{{ .Content }}{{ end }}
+{{ range $p := .Site.AllPages }}
+{{- range .Aliases -}}
+{{ . }} {{ $p.RelPermalink }} 301
+{{ end }}
+{{- end -}}
