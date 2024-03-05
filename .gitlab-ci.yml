@@ -33,7 +33,7 @@ pages:
     # Build
     - export HUGO_ENVIRONMENT=production
     - export HUGO_ENV=production
-    - hugo --gc --minify --baseURL "https://michael-markl-de-michael-markl-27f9beddb1227e66d1cdad88348bd8b4.gitlab.io"
+    - hugo --gc --minify --baseURL "https://michael-markl.de"
     # Compress
     - find public -type f -regex '.*\.\(css\|html\|js\|txt\|xml\)$' -exec gzip -f -k {} \;
     - find public -type f -regex '.*\.\(css\|html\|js\|txt\|xml\)$' -exec brotli -f -k {} \;
