@@ -9,7 +9,7 @@
             <li><a href="{{ .Permalink }}">
                     <div>{{ .Title }}</div>
                     <div><span class="date">{{ .Date.Format "Jan, 2006." }} Joint work with {{ .Param "joint-authors" }}.</div>
-                    <div><span class="date">Abstract:</span> {{ .Summary  }}</div>
+                    <div class="short-abstract"><span class="date">Abstract:</span> {{ .Summary  }}</div>
                 </a></li>
             {{ end }}
         {{ end }}

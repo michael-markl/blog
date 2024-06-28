@@ -297,6 +297,13 @@ $avatar-circle-margin: 15px;
     color: lighten($black, 30%);
 }
 
+#content .short-abstract {
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
 #content h1 {
     text-decoration: solid;
     text-decoration-skip-ink: auto;
