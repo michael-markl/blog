@@ -15,7 +15,7 @@
             (resources.Get "fonts/josefin-sans/latin-italic.css")
             (resources.Get "style.scss" | toCSS )
             | resources.Concat "/style.css"
-            | resources.PostCSS
+            | css.PostCSS
     }}
 
     {{ if hugo.IsProduction }} 
