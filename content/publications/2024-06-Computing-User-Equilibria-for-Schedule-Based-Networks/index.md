@@ -14,6 +14,8 @@ Modelling passenger assignments in public transport networks is a fundamental ta
 ## Publications
 
 * ArXiv Preprint: {{< doi "10.48550/arXiv.2406.17153" >}}
+* Conference version: 24th Symposium on Algorithmic Approaches for Transportation Modelling, Optimization, and Systems (ATMOS 2024), Open Access Series in Informatics (OASIcs), Volume 123, pp. 17:1-17:17, Schloss Dagstuhl – Leibniz-Zentrum für Informatik (2024) {{< doi "10.4230/OASIcs.ATMOS.2024.17" >}}
+
 
 ## Supplementary Material
 
